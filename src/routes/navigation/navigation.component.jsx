@@ -2,6 +2,8 @@ import { Fragment, useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 import { ReactComponent as CrmLogo} from "../../assets/007 crown.svg";
 import './navigation.styles.scss';
+import CartIcon from "../../Component/cart-icon/cart-icon.component";
+import CartDropdown from "../../Component/cart-dropdown/cart-dropdown.component";
 import { UserContext } from "../../context/user.context";
 import { signOutUser } from "../../utility/firebase/firebase.util";
 
@@ -26,7 +28,9 @@ const Navigation =()=>{
                   </Link>
                 )
               }
+              <CartIcon/>
             </div>
+            <CartDropdown/>
       </div>
       <Outlet/>
     </Fragment>
