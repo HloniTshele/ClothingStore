@@ -10,5 +10,4 @@ const CartDropdown =()=>{
         </div>
     )
 }
-
 export default CartDropdown;
